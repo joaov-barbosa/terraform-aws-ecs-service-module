@@ -1,0 +1,9 @@
+terraform apply --auto-approve -var-file=environment/dev/terraform.tfvars
+terraform plan -var-file=environment/dev/terraform.tfvars
+terraform init -backend-config=environment/dev/backend.t
+
+
+################# ABORDAGEM  1 ###############
+Alarmes do CloudWatch
+O alarme acionou por consumo de memória/cpu escala pra cima.
+
